@@ -26,7 +26,7 @@ function App() {
       {/*parent div to serve as a container for starship flash cards. flash card elements should all be contained in a parent div*/}
       <div className="starship-cards">
         {/*map over array of starships. map() requires a return statement to return something since it is a function*/}
-        {/*optional chaining is required if not, an undefined error will occur if starships state is NOT initialized, meaning in this case no data was assigned to it when it was declared*/}
+        {/*optional chaining is required if not, an undefined error will occur if starships state is NOT initialized, meaning in this case no data type, including an empty array was assigned to it when it was declared*/}
         {starships?.map((starship, i) => {
           return <StarshipCard key={i} starship={starship} />;
         })}
