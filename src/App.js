@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="app-component-header">App Component</div>
+      <div className="app-component-header">React Star Wars</div>
       {/*parent div to serve as a container for starship flash cards. flash card elements should all be contained in a parent div*/}
       <div className="starship-cards">
         {/*map over array of starships. map() requires a return statement to return something since it is a function*/}
