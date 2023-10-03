@@ -6,7 +6,7 @@ import { getAllStarships } from "./services/sw-api"; //using a named import (wit
 
 function App() {
   //state to hold starships data
-  const [starships, setStarships] = useState();
+  const [starships, setStarships] = useState([]);
 
   //This will run on the first render but not on subsquent renders due to the empty array passed as a second parameter
   useEffect(() => {
@@ -26,7 +26,7 @@ function App() {
       {/*parent div to serve as a container for starship flash cards. flash card elements should all be contained in a parent div*/}
       <div className="starship-cards">
         {/*map over array of starships. map() requires a return statement to return something since it is a function*/}
-        {/*optional chaining is required if not, an undefined error will occur since starships state is NOT initialized, meaning in this case no array data is assigned to it when it was declared*/}
+        {/*optional chaining is required if not, an undefined error will occur if starships state is NOT initialized, meaning in this case no data was assigned to it when it was declared*/}
         {starships?.map((starship, i) => {
           return <StarshipCard key={i} starship={starship} />;
         })}
