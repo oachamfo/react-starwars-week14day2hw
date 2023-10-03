@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import StarshipCard from "./components/StarshipCard"; //default import of StarshipCard()
-import { getAllStarships } from "./services/sw-api"; //using a named import (with the curly braces) for getAllStarships function
+import { getAllStarships } from "./services/sw-api"; //using a named import (with the curly braces) for getAllStarships() function
 
 function App() {
   //state to hold starships data
